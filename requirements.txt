@@ -1,0 +1,19 @@
+# Core runtime — everything needed to run the mock (offline, zero-key) path.
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-core>=0.3.0
+pydantic>=2.6
+logfire>=0.50
+rich>=13.7
+
+# Loads .env for real-provider config (optional; mock needs no env)
+python-dotenv>=1.0
+
+# Tests
+pytest>=8.0
+
+# Optional real providers — imported lazily behind try/except. Uncomment to use
+# LLM_PROVIDER=anthropic|openai|groq. Not required for mock/eval/tests.
+# langchain-anthropic>=0.2.0
+# langchain-openai>=0.2.0
+langchain-groq>=0.2.0

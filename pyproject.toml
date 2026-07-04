@@ -1,0 +1,6 @@
+[tool.pytest.ini_options]
+# Make `frontline` / `eval` importable regardless of how pytest is invoked
+# (bare `pytest` vs `python -m pytest`).
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"

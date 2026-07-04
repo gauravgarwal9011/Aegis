@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated artifacts (keep the dirs via .gitkeep)
+outputs/*.json
+outputs/*.html
+eval/report.json
+eval/report.html
